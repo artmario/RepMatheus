@@ -15,17 +15,15 @@ int main()
     char gab[N];
     char classe[M][N];
     int acerto[M];
-    printf("Digite gabarito:\n");
+    printf("Digite gabarito com %d letras:\n",N-1);
     fgets(gab,fim,stdin);//lendo gabarito
     gab[fim-1]='\0';
-    printf("%s",gab);
     for (i = 0; i < M; i++)
     {
         fflush(stdin);
         printf("\nDigite entrado do aluno %d:\n",i);
         fgets(classe[i],fim,stdin);//lê prova de um aluno
         classe[i][fim-1]='\0';
-        printf("%s\n",classe[i]);
         acerto[i]=0;//inicializando as notas
     }
     for (i = 0; i < M; i++)

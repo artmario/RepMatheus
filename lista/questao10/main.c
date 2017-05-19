@@ -11,6 +11,7 @@ selecionar as opções 1, 2 e 3. Para tanto, o construa outros subalgoritmos que p
 total de votos para cada candidato; o total de votos em branco, o total de votos nulos; o total de votos válidos; e o total
 de votos.
 */
+#define K 3
 typedef struct candidato
 {
     int votos;
@@ -20,23 +21,26 @@ typedef struct candidato
 } candidato;
 
 void candInit(candidato *x,int id, const char *nome,const char *partido);
+void mostraCand(candidato *x);
 void resumo(candidato *x,int numCand, int brancos, int nulos);
 int main()
 {
     int i;
     int aux;
-    char voto[5];
+    char voto[10];
     int brancos=0;
     int nulos=0;
-    candidato ele[3];
+    candidato ele[K];
     candInit(&ele[0],1,"joso","pt");
     candInit(&ele[1],2,"maria","pc");
     candInit(&ele[2],3,"carlos","pdt");
+
     do
-    {
+    {   mostraCand(ele);
         printf("digite seu voto:\n");
-        fgets (voto, 2, stdin);
-        if(isalpha((int)voto[0])&&(voto[0]=='x'||voto[0]=='X'))
+        scanf("%s",voto);
+        fflush(stdin);
+        if(isalpha(voto[0])&&(voto[0]=='x'||voto[0]=='X'))
         {
             break;
         }
@@ -44,7 +48,7 @@ int main()
         {
             aux=atoi(voto);
             int valido=-1;
-            for(i=0;i<3;i++)
+            for(i=0;i<K;i++)
             {
               if(ele[i].id==aux)
               {
@@ -66,7 +70,7 @@ int main()
 
         }
     }while(1);
-    resumo(&ele,3,brancos,nulos);
+    resumo(ele,K,brancos,nulos);
     return 0;
 }
 void candInit(candidato *x,int id, const char *nome,const char *partido)
@@ -88,4 +92,17 @@ void resumo(candidato *x,int numCand, int brancos, int nulos)
     }
     total+=nulos+brancos;
     printf("brancos :%d\nnulos :%d\ntotal:%d\n",brancos,nulos,total);
+}
+void mostraCand(candidato *x)
+{
+    printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+    int i;
+    printf("...........\t\t\t\t\t|\n");
+    printf("|candidato\t|partido\t|numero\t\t|\n");
+    printf("...........\t\t\t\t\t|\n");
+    for(i=0;i<K;i++)
+    {
+        printf("|%s\t\t|%s\t\t|%d\t\t|\n",x[i].nome,x[i].partido,x[i].id);
+    }
+    printf("...........\t\t\t\t\t|\n");
 }

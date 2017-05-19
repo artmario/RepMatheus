@@ -6,29 +6,9 @@
 operações: a) trocar a linha de índice 2 com a linha de índice 4; b) trocar a coluna de índice 1 com a coluna de índice 3.
  */
 #define K 5
-
-void tLin(int m[K][K],int x,int y)
-{
-    int aux;
-    int i;
-    for (i = 0; i < K; i++)
-    {
-        aux=m[x][i];
-        m[x][i]=m[y][i];
-        m[y][i]=aux;
-    }
-}
-void tCol(int m[K][K],int x,int y)
-{
-    int aux;
-    int i;
-    for (i = 0; i < K; i++)
-    {
-        aux=m[i][x];
-        m[i][x]=m[i][y];
-        m[i][y]=aux;
-    }
-}
+void tLin(int m[K][K],int x,int y);
+void tCol(int m[K][K],int x,int y);
+void exibeMat(int mat[K][K]);
 int main()
 {
     int aux=0;
@@ -41,15 +21,43 @@ int main()
             mat[i][j]=aux++;
         }
     }
-    //tLin(mat,1,3);
-    //tCol(mat,0,2);
+    tLin(mat,1,3);
+    exibeMat(mat);
+    tCol(mat,0,2);
+    exibeMat(mat);
+    return 0;
+}
+void tCol(int m[K][K],int x,int y)
+{
+    int aux;
+    int i;
     for (i = 0; i < K; i++)
     {
-        for (j = 0; j < K; j++)
-        {
-            printf("%d\t",mat[i][j]);
-        }
-         printf("\n");
+        aux=m[i][x];
+        m[i][x]=m[i][y];
+        m[i][y]=aux;
     }
-    return 0;
+}
+void exibeMat(int mat[K][K])
+{
+    int i,j;
+    for (i = 0; i < K; i++)
+        {
+            for (j = 0; j < K; j++)
+            {
+                printf("%d\t",mat[i][j]);
+            }
+             printf("\n");
+        }
+}
+void tLin(int m[K][K],int x,int y)
+{
+    int aux;
+    int i;
+    for (i = 0; i < K; i++)
+    {
+        aux=m[x][i];
+        m[x][i]=m[y][i];
+        m[y][i]=aux;
+    }
 }
