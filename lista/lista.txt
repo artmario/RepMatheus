@@ -1,0 +1,58 @@
+Lista de Exercícios
+
+Cada questão da lista deve ser implementada em um projeto
+separado no Code Blocks. Todos os projetos devem ser colocados dentro de um arquivo ZIP .
+
+Questão 1. Faça um algoritmo que, dado dois vetores A e B previamente ordenados contendo o mesmo número de
+elementos, intercala os vetores A e B compondo um terceiro vetor C ordenado e sem repetições.
+Ex.: A = [3, 7, 8, 10, 12], B = [1, 4, 7, 10, 13], C = [1, 3, 4, 7, 8, 10, 12, 13]
+
+Questão 2. Faça um programa para identificar o maior número armazenado em um vetor. Os elementos do vetor deverão
+ser lidos em um procedimento. Em uma função, o maior elemento do vetor deverá ser localizado e retornado para o
+programa principal para ser impresso.
+
+Questão 3. Os elevadores comercializados pela empresa Atlantis possuem uma capacidade máximo de 15 pessoas ou
+800 kg. Logo, suponhamos que as pessoas vão entrando no elevador, o algoritmo deve ler o peso de cada pessoa, e caso
+sua entrada não ultrapasse nenhum dos limites (total de pessoas permitido ou peso total permitido), o elevador deverá
+mostrar a mensagem “Entrada Permitida”. Caso um dos limites seja ultrapassado, o elevador deve informar “Entrada
+Proibida”. Por fim, para o elevador subir / descer deve-se criar um código para encerrar o programa, onde deverá ser
+mostrado o total de pessoas transportadas e o peso total carregado pelo elevador.
+
+Questão 4. Faça um algoritmo que leia um vetor de caracteres de n posições que armazena o gabarito de uma prova de
+matemática. A seguir leia uma matriz de caracteres mxn, onde m é a quantidade de alunos e cada linha da matriz
+representa as respostas de um aluno. Para cada aluno, mostre o número de acertos.
+
+Questão 5. Escrever um algoritmo para ler uma matriz 5x5. O algoritmo deve mostrar a matriz após realizar as seguintes
+operações: a) trocar a linha de índice 2 com a linha de índice 4; b) trocar a coluna de índice 1 com a coluna de índice 3.
+
+Questão 6. Faça um algoritmo que leia uma matriz quadrada de números reais. Construa dois vetores A e B, onde cada
+elemento de A é a soma dos elementos de uma linha da matriz e cada elemento de B é a soma dos elementos de uma
+coluna da matriz.
+
+Questão 7. Uma locadora está fazendo uma promoção onde, para cada 10 filmes retirados durante o último ano, o cliente
+tem direito a uma locação grátis. Faça um algoritmo para ler em um vetor a quantidade de filmes retirados por seus
+clientes durante o ano passado e, então, construir outro vetor contendo a quantidade de locações gratuitas a que cada
+cliente tem direito.
+
+Questão 8. Faça um programa para ler um vetor de 10 posições de números reais. A seguir, ler um código numérico
+inteiro e, se o código for 0, termine o programa. Se o código for 1, mostre o vetor na ordem direta. Se o código for 2,
+mostre o vetor na ordem inversa.
+
+Questão 9. Construa um algoritmo que apresente um menu com 3 opções: inserir, remover e substituir. Construa um
+vetor de inteiros com 20 posições declarado globalmente. O usuário poderá digitar a opção que deseja utilizar,
+informando o número da opção selecionada:
+1: o subalgoritmo deve ser chamado para inserir o valor na próxima posição livre do vetor;
+2: o subalgoritmo deve remover um elemento do vetor de acordo com a posição passada como parâmetro
+3: o subalgoritmo recebe por parâmetro um valor e uma posição. O subalgoritmo deve substituir o valor existente
+na posição informada pelo valor passado por parâmetro. Se ainda não houver elemento na posição informada, deve se
+inserir o valor na próxima posição livre.
+
+Questão 10. Em uma eleição, existem três candidatos. Logo, para representar os diferentes candidatos, crie um registro
+Candidato, contento os atributos: nome, partido, e seu numero (que o eleitor deve digitar). Por ocasião da votação, você
+pode já predefinir os valores de cada variável candidato criada no programa principal. Além disso, considere que, os
+votos são informados conforme a seguir: 0 - voto em branco; 1, 2, 3 - voto para os respectivos candidatos; x - encerra
+votação; outro - voto nulo. Construa um algoritmo que imprima um menu para votação, e permita que o usuário possa
+selecionar as opções 1, 2 e 3. Para tanto, o construa outros subalgoritmos que permita ao sistema calcular e mostrar: o
+total de votos para cada candidato; o total de votos em branco, o total de votos nulos; o total de votos válidos; e o total
+de votos.
+da uma olhada e me dá um prazo de entrega e o valor, ok?

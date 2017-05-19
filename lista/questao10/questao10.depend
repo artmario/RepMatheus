@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1495201941 source:c:\users\thiag\documents\lista profes\questao10\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
