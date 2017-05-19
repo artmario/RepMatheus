@@ -71,10 +71,10 @@ int main()
 {
     int i;
     int vetor[K]={1,3,5,7,9};
-    int vetor1[K]={2,4,6,8,10};
+    int vetor1[K]={3,4,6,8,10};
     int *vetor3;
     vetor3=concatena(vetor,vetor1);
-    for(i=0;i<10;i++)
+    for(i=0;i<total;i++)
     {
         printf("%d\n",vetor3[i]);
     }
