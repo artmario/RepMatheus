@@ -16,7 +16,7 @@ int main()
     int aux;
     do
     {
-        printf("digite o peso da %dº° pessoa:(digite peso negativo para sair)",i++);
+        printf("digite o peso da (%d) pessoa:\n(digite peso negativo para sair)\n",i++);
         scanf("%d",&aux);
         if(aux>0)
         {

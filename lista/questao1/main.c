@@ -7,6 +7,20 @@ Ex.: A = [3, 7, 8, 10, 12], B = [1, 4, 7, 10, 13], C = [1, 3, 4, 7, 8, 10, 12, 1
 #define K 5
 #define Y 10
 int total;
+
+int *concatena(int vet1[K], int vet2[K]);
+int main()
+{
+    int i;
+    int vetor[K]={1,3,5,7,9};//entrada impar
+    int vetor1[K]={3,4,6,8,10};//entrada par
+    vetor3=concatena(vetor,vetor1);
+    for(i=0;i<total;i++)
+    {
+        printf("%d\n",vetor3[i]);
+    }
+    return 0;
+}
 int *concatena(int vet1[K], int vet2[K])//concatena 2 vetores e retornando o endereco do vetor resultante
 {
     int i ;
@@ -65,18 +79,4 @@ int *concatena(int vet1[K], int vet2[K])//concatena 2 vetores e retornando o end
         ret[i]=vet3[i];
     }
     return ret;
-}
-
-int main()
-{
-    int i;
-    int vetor[K]={1,3,5,7,9};
-    int vetor1[K]={3,4,6,8,10};
-    int *vetor3;
-    vetor3=concatena(vetor,vetor1);
-    for(i=0;i<total;i++)
-    {
-        printf("%d\n",vetor3[i]);
-    }
-    return 0;
 }

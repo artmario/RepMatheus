@@ -19,8 +19,9 @@ int main()
 void lerVetor(int *x)
 {
     int i;
+    printf("digite o valor:\n");
     for(i=0;i<K;i++)
-    {
+    {   printf("vet:[%d]\n",i);
         scanf("%d",&x[i]);
     }
 }
