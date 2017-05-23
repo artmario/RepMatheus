@@ -14,7 +14,9 @@ int main()
     int i;
     int vetor[K]={1,3,5,7,9};//entrada impar
     int vetor1[K]={3,4,6,8,10};//entrada par
+    int *vetor3=NULL;
     vetor3=concatena(vetor,vetor1);
+    printf("vetor intercalado:\n");
     for(i=0;i<total;i++)
     {
         printf("%d\n",vetor3[i]);
