@@ -37,7 +37,7 @@ int main()
 
     do
     {   mostraCand(ele);
-        printf("digite seu voto:\n");
+        printf("digite seu voto ou x para encerrar\n 0 - voto em branco:\n");
         scanf("%s",voto);
         fflush(stdin);
         if(isalpha(voto[0])&&(voto[0]=='x'||voto[0]=='X'))
